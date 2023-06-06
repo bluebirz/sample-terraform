@@ -1,0 +1,22 @@
+steps:
+  - name: "hashicorp/terraform:1.0.0"
+    id: "init"
+    entrypoint: "sh"
+    args:
+      - "-c"
+      - |
+        terraform init -backend-config="../variables/backend-dev.hcl"
+  - name: "hashicorp/terraform:1.0.0"
+    id: "plan"
+    entrypoint: "sh"
+    args:
+      - "-c"
+      - |
+        terraform plan $(for v in $(ls ../variables/*.tfvars); do echo -var-file="$v"; done)
+  - name: "hashicorp/terraform:1.0.0"
+    id: "apply"
+    entrypoint: "sh"
+    args:
+      - "-c"
+      - |
+        terraform apply $(for v in $(ls ../variables/*.tfvars); do echo -var-file="$v"; done) -auto-approve
