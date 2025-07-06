@@ -7,6 +7,5 @@
 
 ## blog related
 
-- [EN] [Let's try: Terraform part 6 – CI/CD](https://www.bluebirz.net/en/lets-try-terraform-part-6/)
-- [TH] [มาใช้ Terraform กันเถอะ – ตอนที่ 6 ประยุกต์ใช้ CI/CD](https://www.bluebirz.net/th/lets-try-terraform-part-6-th/)
+- [Blog] [Let's try: Terraform part 6 – CI/CD](https://bluebirz.net/posts/try-terraform-part-6)
 - [Medium] [Let's try: Terraform part 6 – CI/CD](https://medium.com/@bluebirz/lets-try-terraform-part-6-ci-cd-ec6e4ea87503)
