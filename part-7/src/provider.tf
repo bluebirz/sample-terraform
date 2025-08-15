@@ -7,6 +7,6 @@ terraform {
   }
 }
 provider "google" {
-  project = var.my_project
+  project = "blebirz-playground"
 }
 
