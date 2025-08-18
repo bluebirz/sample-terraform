@@ -1,0 +1,18 @@
+resource "google_storage_bucket" "bucket" {
+  name     = "bluebirz-test-bucket"
+  location = "US"
+}
+
+variable "object_spec_foreach" {
+  type = map(object({
+    name    = string
+    content = string
+  }))
+}
+
+resource "google_storage_bucket_object" "object" {
+  for_each = var.object_spec_foreach
+  name     = each.value.name
+  bucket   = google_storage_bucket.bucket.name
+  content  = each.value.content
+}
