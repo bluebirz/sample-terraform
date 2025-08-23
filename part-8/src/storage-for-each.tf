@@ -8,6 +8,16 @@ variable "object_spec_foreach" {
     name    = string
     content = string
   }))
+  default = {
+    file1 = {
+      name    = "file1.txt"
+      content = "This is file 1"
+    },
+    file2 = {
+      name    = "file2.txt"
+      content = "This is file 2"
+    }
+  }
 }
 
 resource "google_storage_bucket_object" "object" {

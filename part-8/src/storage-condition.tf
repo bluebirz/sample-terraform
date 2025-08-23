@@ -17,6 +17,12 @@ locals {
 
 resource "google_storage_bucket_object" "object" {
   name    = local.target_file.name
-  bucket  = google_storage_bucket.bucket.name
   content = local.target_file.content
+  bucket  = google_storage_bucket.bucket.name
+}
+
+resource "google_storage_bucket_object" "object_2" {
+  name    = var.object_spec == null ? "special-file.resource" : var.object_spec.name
+  content = var.object_spec == null ? "This is a special file" : var.object_spec.content
+  bucket  = google_storage_bucket.bucket.name
 }
