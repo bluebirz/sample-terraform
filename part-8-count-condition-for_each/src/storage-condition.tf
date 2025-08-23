@@ -22,7 +22,7 @@ resource "google_storage_bucket_object" "object" {
 }
 
 resource "google_storage_bucket_object" "object_2" {
-  name    = var.object_spec == null ? "special-file.resource" : var.object_spec.name
+  name    = var.object_spec == null ? "special-file.txt" : var.object_spec.name
   content = var.object_spec == null ? "This is a special file" : var.object_spec.content
   bucket  = google_storage_bucket.bucket.name
 }
