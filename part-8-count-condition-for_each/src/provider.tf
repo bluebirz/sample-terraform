@@ -7,6 +7,6 @@ terraform {
   }
 }
 provider "google" {
-  project = "blebirz-playground"
+  project = "bluebirz-playground"
 }
 
