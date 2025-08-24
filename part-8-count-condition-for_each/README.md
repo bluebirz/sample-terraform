@@ -7,5 +7,5 @@
 
 ## blog related
 
-- [Blog] [Let's try: Terraform part 8 - Conditions and Repetition](https://bluebirz.net/posts/try-terraform-part-8)
-- [Medium] [Let's try: Terraform part 8 - Conditions and Repetition](https://medium.com/@bluebirz/lets-try-terraform-part-6-ci-cd-ec6e4ea87503)
+- [Blog] [Let's try: Terraform part 8 - Conditions and Repetition](https://bluebirz.net/posts/try-terraform-part-8/)
+- [Medium] [Let's try: Terraform part 8 - Conditions and Repetition](https://medium.com/@bluebirz/lets-try-terraform-part-8-conditions-and-repetition-513111f7a021)
