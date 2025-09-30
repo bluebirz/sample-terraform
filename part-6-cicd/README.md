@@ -19,9 +19,7 @@
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | 3.90.1 |
+No providers.
 
 ## Modules
 
@@ -31,11 +29,7 @@
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [google_storage_bucket.bucket](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket) | resource |
-| [google_storage_bucket_object.object](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket_object) | resource |
-| [google_storage_bucket_object.object_2](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket_object) | resource |
+No resources.
 
 ## Inputs
 
@@ -45,11 +39,8 @@
 | <a name="input_my_bucket_class"></a> [my\_bucket\_class](#input\_my\_bucket\_class) | n/a | `string` | n/a | yes |
 | <a name="input_my_bucket_location"></a> [my\_bucket\_location](#input\_my\_bucket\_location) | n/a | `string` | n/a | yes |
 | <a name="input_my_project"></a> [my\_project](#input\_my\_project) | n/a | `string` | `"bluebirz-playground"` | no |
-| <a name="input_object_spec"></a> [object\_spec](#input\_object\_spec) | n/a | <pre>object({<br/>    name    = string<br/>    content = string<br/>  })</pre> | `null` | no |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_object_path"></a> [object\_path](#output\_object\_path) | n/a |
+No outputs.
 <!-- END_TF_DOCS -->

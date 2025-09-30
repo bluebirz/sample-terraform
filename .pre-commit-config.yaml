@@ -10,3 +10,11 @@ repos:
         files: part-6-cicd/src/
         args:
           - --args=--config=part-6-cicd/.terraform-docs.yml
+      - id: terraform_fmt
+        name: format part 8
+        files: part-8-count-condition-for_each/
+      - id: terraform_docs
+        name: terraform-docs part 6
+        files: part-8-count-condition-for_each/src/
+        args:
+          - --args=--config=part-8-count-condition-for_each/.terraform-docs.yml
